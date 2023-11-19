@@ -2,30 +2,24 @@ body {
     background-color: gray;
 }
 
-.main {
-    padding: 3%;
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(2, 2, 2);
 }
 
-@media screen and (max-width: 600px) {
-    .main {
-        background-color: blue;
-    }
+.item2{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
 }
 
-@media screen and (min-width: 601px) and (max-width:768px) {
-    .main {
-        background-color: green;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width:1024px) {
-    .main {
-        background-color: brown;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .main {
-        background-color: red;
-    }
+.grid{
+    padding: 10px;
+    background-color: rgb(39, 156, 156);
+    display: inline-grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat(12, 50px) ;
 }
