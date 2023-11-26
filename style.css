@@ -27,6 +27,7 @@ li {
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .landing > video {
@@ -42,6 +43,35 @@ li {
     padding: 20px 40px;
 }
 
+.header > h2 {
+    text-shadow: 15px 5px 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 40px;
+
+    & > span{
+        font-weight: 900px;
+        font-size: 24px;
+        color: rgb(255, 255, 255, 0.2);
+    }
+
+    & > h1{
+        margin: 0;
+        font-weight: 900px;
+        font-size: 48px;
+    }
+
+    & > p{
+        margin: 0;
+        font-size: 24px;
+        color: rgb(255, 255, 255, 0.5);
+    }
+}
+
 .nav > ul {
     display: flex;
     gap: 50px;
@@ -49,10 +79,34 @@ li {
         text-decoration: none;
     }
 
-    & >li >a:hover {
+    & >li >a:hover{
         color: rgba(255, 255, 255, 0.25);
         border-bottom: 2px solid rgba(255, 255, 255, 0.25);;
     }
+}
+
+.landing-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.divider {
+    font-size: 24px;
+    position: relative;
+    padding: 0 2rem;
+    color: rgb(255, 255, 255, 0.5);
+    height: 100%;
+}
+
+.divider::after{
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.5);
+    
 }
 
 
