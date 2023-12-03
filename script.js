@@ -1,3 +1,5 @@
+debugger
+
 console.log("Merhaba");
 
 let firstName = "Deniz";
