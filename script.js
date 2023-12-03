@@ -20,4 +20,18 @@ firstName = "Deniz" + " " + "Zent";
 
 console.log("Ad Soyad:", firstName)
 
+let age = 18
+
+console.log("Deniz'in yaşı:", age)
+
+const year = 2023
+
+console.log("Yıl:", year);
+
+let birthYear;
+
+console.log(year - age);
+
+
+
 
