@@ -1,36 +1,26 @@
-debugger
+console.log("Hoşgeldiniz");
 
-console.log("Merhaba");
+let firstName ="Ayşe"
 
-let firstName = "Deniz";
+let lastName ="Yılmaz";
 
-console.log(firstName);
+let age = 29;
 
-const lastName = "Zent";
-
-console.log(lastName);
-
-firstName = lastName;
-
-console.log(firstName);
-
-console.log("Soyad:", lastName)
-
-firstName = "Deniz" + " " + "Zent";
-
-console.log("Ad Soyad:", firstName)
-
-let age = 18
-
-console.log("Deniz'in yaşı:", age)
-
-const year = 2023
-
-console.log("Yıl:", year);
+let year = 2023;
 
 let birthYear;
 
-console.log(year - age);
+console.log("Ad Soyad Yaş:", firstName + " " + lastName + " " + age)
+
+lastName = "Yıldırım";
+
+console.log("Soyad:", lastName);
+
+console.log("Doğum Yılı:", year - age);
+
+birthYear = year - age;
+
+console.log("Ad Soyad Yaş Doğum Yılı:",firstName + " " + lastName+ " " + age+ " " + birthYear);
 
 
 
