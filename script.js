@@ -22,6 +22,13 @@ birthYear = year - age;
 
 console.log("Ad Soyad Yaş Doğum Yılı:",firstName + " " + lastName+ " " + age+ " " + birthYear);
 
+let sayi4 = 14;
+let sayi5 =10;
 
+let isBigger = sayi4 > sayi5; //Büyüktür işareti: doğruysa "True" olarak gözükür yanlış ise "False" olarak gözükür.
 
+console.log(isBigger);
 
+let isLower = sayi4 < sayi5; //Küçüktür işareti: doğruysa "True" olarak gözükür yanlış ise "False" olarak gözükür.
+
+console.log(isLower);
