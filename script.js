@@ -73,3 +73,4 @@ const momnetDate = moment();
 
 const formattedDate = momnetDate.format("DD.MM.YYYY HH.mm.ss");
 console.log(formattedDate);
+
