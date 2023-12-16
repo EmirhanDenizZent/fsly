@@ -46,12 +46,24 @@ do {
 } while (j < 10);
 */
 
+//Örnek
+
+
 let userAge = 0;
 
 while (true) {
   userAge++;
   if (userAge === 18) {
-    console.log("Kişi reşittir", userAge);
+    console.log("(While döngüsü) Kişi reşittir", userAge);
     break;
   }
 }
+
+for(let personAge = 0; true; personAge++) {
+    if (personAge === 18) {
+        console.log("(For döngüsü) Kişi reşittir", personAge);
+        break;
+    }
+}
+
+
