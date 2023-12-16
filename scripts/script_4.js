@@ -25,8 +25,8 @@ function toplamaIslemi (sayi1, sayi2) {
 toplamaIslemi(150, 55);
 
 function I (A, B) {
-    const bölme = A / B;
-    console.log("Bölme işleminin sonucu:", bölme)
+    const sonuc = A / B;
+    console.log("Bölme işleminin sonucu:", sonuc)
 }
 
 I (100, 25);
