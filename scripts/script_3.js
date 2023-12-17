@@ -66,4 +66,12 @@ for(let personAge = 0; true; personAge++) {
     }
 }
 
+//
 
+import { exportMyFunction } from "./script_4";
+import istedigimHerhangiBirIsim from "./script_4"
+
+console.log("script_3.js derlendi!")
+exportMyFunction();
+
+istedigimHerhangiBirIsim();

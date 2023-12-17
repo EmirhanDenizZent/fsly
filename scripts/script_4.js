@@ -136,3 +136,7 @@ function callBackFunc(sonuc) {
 };
 
 callBackExample(10, 20, callBackFunc);
+
+export default function exportMyFunction() {
+  console.log("Bu fonksiyonu başka dosyada çağıracağım")
+}
