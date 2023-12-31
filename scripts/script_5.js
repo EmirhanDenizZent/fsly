@@ -84,3 +84,82 @@ let filteredArray = ages.filter(function(currentAge){
 });
 
 console.log("filtrelenmiş Array: ", filteredArray)
+
+// indexOf (Array'deki bir elemanınızın hangi index sırasında oldugunu söyler.)
+
+const arr = ["elma", "armut", "çilek", "muz"];
+let armutİndex = arr.indexOf("armut");
+console.log("Armut elemanının index sayısı", armutİndex);
+
+arr[armutİndex] = "üzüm";
+console.log(arr);
+
+const kayısıİndex = arr.indexOf("kayısı");
+// Eğer array'de olmayan bir eleman ise bu method -1 sonucunu dönecektir
+
+// İncludes (Array'de bir elemanın olup olmadığını kontrol eder ==> boolean)
+
+const armutExists = arr.includes("armut");
+console.log("Bu array'de armut elemanı var mı?: ", armutExists);
+
+let muzExists = arr.includes("muz");
+console.log("Bu array'de muz elemanı var mı?: ", muzExists);
+
+// reverse (Array'i tersine çevirir.)
+const reverseArr = arr.reverse();
+console.log(reverseArr);
+
+// join (Array'i birleştirip bir string haline getirir.)
+
+const stringedArr = arr.join()
+console.log("Array stringe çevrildi: ", stringedArr, typeof stringedArr);
+
+const _stringedArr = arr.join("+")
+console.log("Elemanlar + ile ayrılmış olacak", _stringedArr);
+
+// split (Bir stringi Array'e çevirir.)
+
+const str = "Bugün hava güneşli";
+const arrStr = str.split(" ");
+console.log("String elemana çevrildi ", arrStr);
+
+// concat (İki array'i birleştirmek için kullanılır.)
+const arr1 = [5, 10, 15, 20, 25, 30];
+const arr2 = [35, 40, 45,50 ,55 ,65 ,70 ,75 ,80];
+
+const nergedArray = arr1.concat([40, 45, 50]);
+console.log("Örnek 1: nerged array ", nergedArray);
+
+const _nergedArray = arr1.concat([arr2]);
+console.log("Örnek 2: _nerged array ", _nergedArray);
+
+// reduce (Arrayde'ki elemanlardan tek bir değer üretir.)
+
+const nums = [5, 43, 44, 50, 51, 90];
+
+let sum = nums.reduce(function(acc, current) {
+    return acc + current // acc = acc + current gibi düşünülebilir. return, her iterasyonda acc'nin yeni değerini günceller
+}, 0); // acc'nin başlangıç değeri sıfırdır (const acc = 0; gibi düşünülebilir)
+
+console.log("Toplam: ", sum);
+console.log("Ortalama: ", sum / nums.length);
+
+// sort (Arrayde'ki elemanları sıralamanızı sağlar)
+
+const newArr = ["elma", "armut", "kivi", "muz"];
+newArr.sort(); // Her hangi bir parametre girilmezse string arrayleri arasında alfabetik sıralama yapar.
+
+console.log(newArr);
+
+const _newArr = [3, 11, 23, 6, 44, 22];
+_newArr.sort(function(a, b){
+    return a - b
+});
+
+console.log("Küçükten büyüğe sırala: ", _newArr);
+
+_newArr.sort(function(a, b){
+    return b - a
+});
+
+console.log("Büyükten küçüğe sırala: ", _newArr);
