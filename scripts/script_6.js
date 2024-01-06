@@ -141,4 +141,4 @@ console.log(car1, car2, car3);
 const object1 = {name: "Lorem", number: 20}
 const object2 = {name: "Ipsum", number: 25}
 
-const object3 = {...object1}
+const object3 = {...object1}; // Objeleri kopyalamak için kullanılan operator.
