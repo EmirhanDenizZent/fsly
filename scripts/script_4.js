@@ -127,16 +127,16 @@ loop(20);
 // Callback Function
 
 const callBackExample = (num1, num2, callback) => {
-    let sonuc = num1 + num2;
-    callback(sonuc);
+  let sonuc = num1 + num2;
+  callback(sonuc);
 };
 
 function callBackFunc(sonuc) {
-    console.log("Toplama sonucu:", sonuc);
-};
+  console.log("Toplama sonucu:", sonuc);
+}
 
 callBackExample(10, 20, callBackFunc);
 
 export default function exportMyFunction() {
-  console.log("Bu fonksiyonu başka dosyada çağıracağım")
+  console.log("Bu fonksiyonu başka dosyada çağıracağım");
 }

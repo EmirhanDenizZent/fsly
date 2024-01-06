@@ -48,7 +48,6 @@ do {
 
 //Örnek
 
-
 let userAge = 0;
 
 while (true) {
@@ -59,19 +58,19 @@ while (true) {
   }
 }
 
-for(let personAge = 0; true; personAge++) {
-    if (personAge === 18) {
-        console.log("(For döngüsü) Kişi reşittir", personAge);
-        break;
-    }
+for (let personAge = 0; true; personAge++) {
+  if (personAge === 18) {
+    console.log("(For döngüsü) Kişi reşittir", personAge);
+    break;
+  }
 }
 
 //
 
 import { exportMyFunction } from "./script_4";
-import istedigimHerhangiBirIsim from "./script_4"
+import istedigimHerhangiBirIsim from "./script_4";
 
-console.log("script_3.js derlendi!")
+console.log("script_3.js derlendi!");
 exportMyFunction();
 
 istedigimHerhangiBirIsim();

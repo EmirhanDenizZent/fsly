@@ -1,24 +1,22 @@
-
 // İf Else Yapısı.
 
 let condition = 25 > 5;
 
-if(condition && 10 < 15) {
-    console.log("Şart doğrudur");
+if (condition && 10 < 15) {
+  console.log("Şart doğrudur");
 } else {
-    console.log("Şart yanlıştır");
+  console.log("Şart yanlıştır");
 }
 
-if(5 === "5" ) {
-    console.log("Evet-1");
-} else if(5 === "6") {
-    console.log("Evet-2");
-} else if(5 === 5) {
-    console.log("Evet-3");
+if (5 === "5") {
+  console.log("Evet-1");
+} else if (5 === "6") {
+  console.log("Evet-2");
+} else if (5 === 5) {
+  console.log("Evet-3");
 } else {
-    console.log("Hayır");
+  console.log("Hayır");
 }
-
 
 /*
 if(5 === "5" ) console.log("Evet-1");
@@ -76,30 +74,30 @@ console.log("Bugün günlerden:", dayOfWeek)
 */
 
 switch (todaysDate) {
-    case 0:
-        dayOfWeek = "Pazar";
-        break;
-    case 1:
-        dayOfWeek = "Pazartesi";
-        break;
-    case 2:
-        dayOfWeek = "Salı";
-        break;
-    case 3:
-        dayOfWeek = "Çarşamba";
-        break;
-    case 4:
-        dayOfWeek = "Perşembe";
-        break;
-    case 5:
-        dayOfWeek = "Cuma";
-        break;
-    case 6:
-        dayOfWeek = "Cumartesi";
-        break;
-    default:
-        dayOfWeek = "Gün değeri alınamadı";
-        break;
+  case 0:
+    dayOfWeek = "Pazar";
+    break;
+  case 1:
+    dayOfWeek = "Pazartesi";
+    break;
+  case 2:
+    dayOfWeek = "Salı";
+    break;
+  case 3:
+    dayOfWeek = "Çarşamba";
+    break;
+  case 4:
+    dayOfWeek = "Perşembe";
+    break;
+  case 5:
+    dayOfWeek = "Cuma";
+    break;
+  case 6:
+    dayOfWeek = "Cumartesi";
+    break;
+  default:
+    dayOfWeek = "Gün değeri alınamadı";
+    break;
 }
 
 console.log(dayOfWeek);
