@@ -211,18 +211,3 @@ console.log(garantiHesabim.getParola());
 garantiHesabim.setParola(9876);
 
 garantiHesabim.bilgileriGoster();
-
-class Yiyecek{
-    constructor(kalori){
-        this.kalori = kalori;
-    };
-};
-
-class Meyveler extends Yiyecek{
-    constructor(kalori, kabukluMu){
-        super(kalori);
-        this.kabukluMu = kabukluMu;
-    }
-}
-
-let
